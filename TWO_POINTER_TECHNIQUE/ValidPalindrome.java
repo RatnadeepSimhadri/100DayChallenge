@@ -1,3 +1,5 @@
+package TWO_POINTER_TECHNIQUE;
+
 class Solution {
     public static void main(String[] args) {
           String testString1 = "radar";
