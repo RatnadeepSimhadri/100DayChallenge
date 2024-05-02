@@ -1,8 +1,8 @@
 package io.datajek.spring.basics.movierecommendersystem;
 
-public class ContentBasedFilter implements Filter {
+public class CollaborativeFilter implements Filter {
     @Override
     public String[] getRecommendations(String movie) {
-          return new String[] {"Happy Feet", "Ice Age", "Shark Tale"};
+        return new String[]{"Finding Nemo", "Ice Age", "Toy Story"};
     }
 }
