@@ -1,6 +1,7 @@
 package io.datajek.spring.basics.movierecommendersystem;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,9 +13,10 @@ public class RecommenderImplementation {
      * type then it tries to resolve it by name.
      */
     @Autowired
-    private Filter contentBasedFilter;
+    @Qualifier("ContentBasedFilter")
+    private Filter filter;
 
     public String[] recommendMovies(String movie){
-        return contentBasedFilter.getRecommendations(movie);
+        return filter.getRecommendations(movie);
     }
 }
