@@ -12,8 +12,14 @@ public class RecommenderImplementation {
      * If it fails to resolve a conflict and finds more than one bean of the same 
      * type then it tries to resolve it by name.
      */
+
+
     @Autowired
-    @Qualifier("ContentBasedFilter")
+    /**
+     * 
+     * The @Qualifier annotation takes precedence over the @Primary annotation. 
+     */
+    @Qualifier("CollaborativeFilter")
     private Filter filter;
 
     public String[] recommendMovies(String movie){
