@@ -95,3 +95,11 @@ houses = {1: "Gryffindor", 2: "Slytherin", 3: "Hufflepuff", 4: "Ravenclaw"}
 new_houses = {n*2: house + "!" for (n, house) in houses.items()}
 print(houses)
 print(new_houses)
+
+
+''' Define a function that calculates high lows based on the the followign condition 
+    if num > 50 or n % 3 == 0 it's a high else low 
+'''
+
+def count_low_high(num_list):
+    return [len([ num for num in num_list if num > 50 or num % 3 == 0]), len([ num for num in num_list if num < 50 or not num % 3 == 0])]
