@@ -36,4 +36,5 @@ _JoshSmith = Employee(1234,"John Smith", 120000)
 print(_RatnaDeep)
 print(_JoshSmith)
 print(_RatnaDeep.company)
+print(_RatnaDeep.demo(a=1,b=2,c=3))
 
